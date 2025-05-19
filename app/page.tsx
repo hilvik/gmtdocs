@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Sidebar />
       
-      <main className={cn("main-content", isSidebarCollapsed && "collapsed")}>
+      <main className={cn("main-content px-4", isSidebarCollapsed && "collapsed")}>
         <div className="mb-12">
           <h1 className="text-4xl font-semibold text-gray-900">Documentation</h1>
           <p className="mt-4 text-lg text-gray-600">Technical documentation and guides for the Get Me Therapy platform</p>
@@ -67,15 +67,15 @@ export default function Home() {
         <section id="client" className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6">Client Side (Webapp)</h2>
           
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1600px] mx-auto">
             <DocCard title="Authentication" className="mb-8">
               <div className="space-y-6">
                 <div>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex justify-between items-center">
+                    <h4 className="text-lg font-medium text-gray-900 mb-0">Login with Email</h4>
                     <img src="/images/login.svg" alt="Email Icon" className="w-6 h-6" />
-                    <h4 className="text-lg font-medium text-gray-900 mb-3">Login with Email</h4>
                   </div>
-                  <div className="space-y-4">
+                  <div className="space-y-4 mt-4">
                     <div>
                       <h5 className="font-medium text-gray-800 mb-2">Flow</h5>
                       <ul className="list-disc pl-5 space-y-1 text-gray-600">
@@ -142,6 +142,16 @@ export default function Home() {
                 </div>
               </div>
             </DocCard>
+
+            <DocCard title="Product Architecture Overview" className="mb-8">
+  <div className="flex justify-center py-4">
+    <img 
+      src="/images/login.svg" 
+      alt="Get Me Therapy Architecture Diagram" 
+      className="max-w-full h-auto"
+    />
+  </div>
+</DocCard>
 
             <DocCard title="Sign Up" className="mb-8">
               <div className="space-y-6">
