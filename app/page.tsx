@@ -71,7 +71,10 @@ export default function Home() {
             <DocCard title="Authentication" className="mb-8">
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-lg font-medium text-gray-900 mb-3">Login with Email</h4>
+                  <div className="flex items-center space-x-4">
+                    <img src="/images/login.svg" alt="Email Icon" className="w-6 h-6" />
+                    <h4 className="text-lg font-medium text-gray-900 mb-3">Login with Email</h4>
+                  </div>
                   <div className="space-y-4">
                     <div>
                       <h5 className="font-medium text-gray-800 mb-2">Flow</h5>
