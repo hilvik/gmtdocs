@@ -146,7 +146,7 @@ export default function Home() {
             <DocCard title="Product Architecture Overview" className="mb-8">
   <div className="flex justify-center py-4">
     <img 
-      src="/images/login.svg" 
+      src="/images/login1.svg" 
       alt="Get Me Therapy Architecture Diagram" 
       className="max-w-full h-auto"
     />
@@ -220,6 +220,15 @@ export default function Home() {
                 </div>
               </div>
             </DocCard>
+            <DocCard title="Product Architecture Overview" className="mb-8">
+  <div className="flex justify-center py-4">
+    <img 
+      src="/images/email.svg" 
+      alt="Get Me Therapy Architecture Diagram" 
+      className="max-w-full h-auto"
+    />
+  </div>
+</DocCard>
 
             <DocCard title="Onboarding Process" className="mb-8">
               <div className="space-y-6">
