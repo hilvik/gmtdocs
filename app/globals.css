@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+}
+
+.sidebar {
+  @apply fixed top-0 left-0 h-screen overflow-y-auto z-20;
+}
+
+.main-content {
+  @apply transition-all duration-300;
+  margin-left: 280px;
+  @apply px-8 py-12 max-w-4xl mx-auto;
+}
+
+.main-content.collapsed {
+  margin-left: 60px;
+}
+
+.nav-section {
+  @apply pt-4 pb-2 px-6 text-xs font-medium uppercase tracking-wider;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    @apply hidden;
+  }
+  
+  .main-content {
+    @apply ml-0 px-4;
+  }
+}
